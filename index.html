@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+    <title>Senjata</title>
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="tugasweb.css">
+    <div class="w3-container">
+</head>
+<body>
+    <center>
+        <h1>Daftar Senjata</h1>
+    </center>
+    <div class="w3-navbar w3-black w3-card-4">
+            <button class="w3-bar-item w3-button" onclick="openKota('katana')">Katana</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('m16')">M16</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('scar')">FN SCAR-L</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('m4')">M4</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('profile')">profile</button>
+    </div>
+        <div id="profile" class="w3-container kota w3-animate-zoom" style="display:block">
+        <center>
+       
+            <h2>profile</h2>
+            <p>Nama: Rizkyansyah Nur Hamzah</p>
+            <p>NIM: 10123094</p>
+            <p>Hobi: Banyak</p>
+        </center>
+        </div>
+        <div id="katana" class="w3-container kota" style="display: none;">
+            <img src="katana.jpeg" alt="Gambar katana">
+        <sleection>
+            <h2>KATANA</h2>
+            <p>Katana (刀) adalah jenis pedang asal Jepang yang biasanya menjadi senjata kaum samurai, 
+                sehingga disebut "pedang samurai" (pedang yang dimiliki para samurai).[1][2] Katana adalah pedang panjang 大刀 (daitō), 
+                walaupun di Jepang sendiri ini merujuk pedang melengkung berukuran lebih dari 2 shaku dan kurang dari 3 shaku, 1 shaku kira-kira 33 cm. 
+                Katana adalah kunyomi (sebutan Jepang) dari kanji 刀; sedangkan onyomi (sebutan Hanzi) karakter kanji tersebut adalah tō atau ken. Ia merujuk kepada pedang satu mata, melengkung yang khusus yang secara tradisi digunakan oleh samurai Jepang.</p>
+        </sleection>
+        </div>
+        
+        <div id="m16" class="w3-container kota" style="display: none;">
+            <img src="m16.jpeg" alt="Gambar M16">
+            <h2>M16</h2>
+            <p>M16 (dikenali sebagai Senapan, kaliber 5,56 mm, M16) adalah sebutan militer Amerika Serikat untuk senapan AR-15 . 
+                    Colt membeli hak atas AR-15 dari ArmaLite dan saat ini menggunakan sebutan yang hanya untuk versi semi-otomatis senapan. 
+                    Senapan M16 menembak menggunakan Magazen 5.56x45mm dan dapat menghasilkan efek melukai besar ketika dampak peluru 
+                    pada kecepatan tinggi dan patek dalam jaringan menyebabkan fragmentasi dan cepat mentransfer energi.</p>
+        </div>
+        <div id="scar" class="w3-container kota " style="display: none;">
+            <img src="scar L.jpeg" alt="Gambar scar L">
+            <h2>FN SCAR-L</h2>
+            <p>SCAR adalah senapan serbu/tempur yang didesain khusus untuk memenuhi kebutuhan Komando Operasi Khusus Amerika Serikat (SOCOM)
+                akan adanya Special Operations Forces (SOF) Combat Assault Rifle atau SCAR buatan FN Herstal (FNH). 
+                Senapan ini dibuat dalam dua varian utama, yaitu SCAR-L menggunakan amunisi 5.56×45mm NATO dan SCAR-H yang menggunakan amunisi 7.62×51mm NATO. Keduanya tersedia dalam dua ukuran laras, 
+                laras panjang dan laras yang lebih pendek. Biasanya laras yang lebih panjang dipakai untuk tipe SCAR-H sedangkan laras yang lebih pendek digunakan untuk Perang jarak dekat menengah dengan tipe SCAR-L. Varian SCAR-L diharapkan dapat mengganti peranan senapan serbu M4.</p>
+        </div>
+        <div id="m4" class="w3-container kota"  style="display: none;">
+            <img src="M4.jpg" alt="Gambar M4" style="width: 700px;">
+            <h2>M4</h2>
+            <p>M4 banyak digunakan oleh Angkatan Bersenjata Amerika Serikat , 
+                dengan keputusan untuk menggantikan sebagian besar senapan M16 di unit tempur Angkatan Darat Amerika Serikat 
+                (mulai 2010) dan Korps Marinir Amerika Serikat (USMC) (mulai 2016) sebagai senjata infanteri utama [8] [9] dan senapan servis . 
+                M4 telah diadopsi oleh lebih dari 60 negara di seluruh dunia, [10] dan telah digambarkan sebagai "salah satu senjata api paling menentukan di abad ke-21".</p>
+         </sleection>
+        </div>
+</body>
+    <footer>
+        <p>&copy; 2023 Senjata. Hak cipta dilindungi undang-undang.</p>
+    </footer>
+    <script>
+        function openKota(namakota) {
+         var i;
+         var x = document.getElementsByClassName("kota");
+         for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+         }
+         document.getElementById(namakota).style.display = "block";
+        }
+        
+    </script>
+</html>
